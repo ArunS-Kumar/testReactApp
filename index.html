@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Groups</title>
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="asset/materialize/css/materialize.css">
+      <link rel="stylesheet" type="text/css" href="asset/css/main.css">
+   </head>
+   <body class="groups">
+      <div class="sidebar">
+         <i class="menu-burger"><span></span></i>
+         <ul class="menu">
+            <li class="active">
+               <a href="groups.html"><i class="icon-sidebar-menu-1"></i>Groups</a>
+            </li>
+         </ul>
+      </div>
+      <div class="content">
+         <main>
+            <div class="main-title">
+               <h1>Groups</h1>
+            </div>
+            <div class="panel z-depth-1">
+               <!--  <div class="panel-tooltip">
+                  <div class="box z-depth-1">
+                      <span class="left">3 selected</span><span class="right action">Deselect</span>
+                  </div>
+                  </div> -->
+               <div id="group"></div>
+               <table class="highlight responsive-table table--first" id="table-groups">
+                  <thead>
+                     <tr>
+                        <th>
+                           <span>Group name</span>
+                        </th>
+                        <th >
+                           <span>Users</span>
+                        </th>
+                        <th >
+                           <span>Apps</span>
+                        </th>
+                        <th >
+                           <span>SOs</span>
+                        </th>
+                        <th >
+                           <span>Description</span>
+                        </th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr id="row-1">
+                        <td class="bold">
+                           Developers
+                        </td>
+                        <td class="center">
+                           5
+                        </td>
+                        <td class="center">
+                           564
+                        </td>
+                        <td class="center">
+                           3666
+                        </td>
+                        <td class="with-icons">
+                           <div class="text">Words To Live By Words To Live By Words To Live By</div>
+                           <div class="icons">
+                              <a href="#" class="delete-row" data-rowid="1"><img src="asset/img/icons/delete.svg" alt="" height="19"></a>
+                              <a href="#" class="edit-row" data-rowid="1"><img src="asset/img/icons/edit.png" alt="" height="18"></a>
+                              <!-- <a href="#" class="add-sos plus" data-rowid="1"><span>+</span><i class="icon-sos icon-19"></i></a>
+                                 <a href="#" class="add-app plus" data-rowid="1"><span>+</span><i class="icon-app icon-19"></i></a>
+                                 <a href="#" class="add-user plus" data-rowid="1"><span>+</span><i class="icon-user icon-19"></i></a> -->
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <!--   <div class="after-table-buttons">
+                  <a href="#" class="btn btn-flat disabled delete-all-rows" id="btn-delete-groups">Delete Selected</a>
+                  <div class="pagination-fortanix right">
+                      <div class="per-page">
+                          Rows per page: <span class="activate-dropdown" data-activates="per-page-dropdown-1">10 <i class="material-icons">arrow_drop_down</i></span>
+                      </div>
+                      <div class="main-part">
+                          <div class="to-left"><i class="material-icons">chevron_left</i></div>
+                          <div class="nums">1-10 of 100</div>
+                          <div class="to-right"><i class="material-icons">chevron_right</i></div>
+                      </div>
+                  
+                      <ul id="per-page-dropdown-1" class="dropdown-content with-hover">
+                          <li><a href="#!">10</a></li>
+                          <li><a href="#!">50</a></li>
+                          <li><a href="#!">100</a></li>
+                      </ul>
+                  </div>
+                  </div> -->
+            </div>
+         </main>
+      </div>
+      <script src="transpiled.js"></script>
+      <script src="asset/js/jquery.min.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function() {
+             // sidebar menu
+             $('.menu-burger').click(function() {
+                 $(this).toggleClass('active');
+                 $('.sidebar').toggleClass('active');
+                 $('.content').toggleClass('short');
+             });
+         });
+      </script>
+   </body>
+</html>
