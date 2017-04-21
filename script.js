@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {MainDiv} from './components/main';
 
 ReactDOM.render(
-	<div>
-		<h1> Group List </h1>
-	</div>,
-	document.getElementById('group')
+	
+	<MainDiv />,
+	document.getElementById('main-div')
 )
+
