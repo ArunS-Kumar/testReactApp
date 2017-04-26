@@ -8,3 +8,13 @@
 	<script src="transpiled.js"></script>
 </body>
 </html>
+sample notes here
+var groups = response.body.groups;
+	 	 	//this.setState( { groups : response.body.groups } );
+	 	 	var myArray = [[]];
+	 	 	groups.map((elem, i) => {
+	 	 		myArray[i] = [];
+				myArray[i]['id'] = elem.id;
+				myArray[i]['name'] = elem.name;
+				myArray[i]['description'] = elem.description;
+	 	 	});
